@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brote Web</title>
+
+    <!--CSS BOOTSTRAP-->
+    <!--build: css dist/index.css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+<!--endbuild-->
+
+
+</head>
+
+
+
+
+<body>
+
+
+<!--BARRA NAVEGACION-->
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">BROTE</a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="./">Home</a></s></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></s></li>
+            <li class="nav-item"><a class="nav-link" href="./envios.html">Envios</a></s></li>
+            <li class="nav-item"><a class="nav-link" href="#">Terminos y Condiciones</a></s></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></s></li>
+
+        </ul>
+    </div>
+
+</nav>
+
+
+
+
+<!--JUMBOTRON-->
+
+
+
+<div class="jumbotron">
+    <h3>Brote Zapas</h3>
+</div>
+
+
+
+<!--BREADCRUMBS-->
+
+
+
+<div class="container">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav>
+
+
+
+
+<!--1ERA SECCION-->
+
+
+
+
+    <div class="row">
+        <div class="col-sm-4">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#materiales" aria-expanded="false" aria-controls="multiCollapse1">¿Materiales?</button>
+        </div>
+
+        <div class="col-sm-4">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#comprar" aria-expanded="false" aria-controls="multiCollapse2">¿Donde Comprar?</button>
+        </div>
+
+        <div class="col-sm-4">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pagar" aria-expanded="false" aria-controls="multiCollapse3">¿Como Pagar?</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 collapse multi-collapse" id="materiales">
+            <p>
+                <h3>¿Materiales?</h3>
+                <p>Averigua mas sobre los materiales que utilizamos</p>
+            </p>
+        </div>
+
+        <div class="col-sm-4 collapse multi-collapse" id="comprar">
+            <p>
+                <h3>¿Donde Puedo Comprar?</h3>
+                <p>Enterate de las diferentes formas de comprar y metodos de envio</p>
+            </p>
+        </div>
+
+        <div class="col-sm-4 collapse multi-collapse" id="pagar">
+            <p>
+                <h3>¿Como Pago?</h3>
+                <p>Diferentes formas de pago</p>
+            </p>
+        </div>  
+
+    </div>
+
+
+
+    <br>
+
+
+
+    <!-- CARRUSEL -->
+
+
+
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/otros.jpg" alt="Primer slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/otros.jpg" alt="Segundo slide">
+            </div>
+             <div class="carousel-item">
+                <img class="d-block w-100" src="images/otros.jpg" alt="Tercer slide">
+            </div>
+        </div>
+    </div>
+    <div>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Anterior</span>
+        </a>
+         <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+
+
+<!--CARDS -->
+
+
+
+    <div class="d-flex flex-wrap flex-row">
+        
+        <div class="card box-galery d-flex flex-column justify-content-between ml-2">
+            <div class="card-body">
+                <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Nuevos modelos!!!">Hombres</h5>
+                <h6 class="card-subtitle text-muted"><span class="oi oi-person"></span></h6>
+                <img class="card-img-top" src="images/hombre.jpg" alt="brote img">
+                <p class="card-text">Galeria</p>
+                 <button class="btn btn-outline-sucess" data-toggle="modal" data-target="#contacto">Contacto</button>
+            </div>
+            <div>
+                <button class="btn btn-success btn-reserva">Ver <span class="oi oi-image"></span></button>
+            </div>
+        </div>
+
+        <div class="card box-galery d-flex flex-column justify-content-between ml-2">
+            <div class="card-body">
+                <h5>Damas</h5>
+                <h6 class="card-subtitle text-muted"><span class="oi oi-person"></span></h6>
+                <img class="card-img-top" src="images/mujer.jpg" alt="brote img">
+                <p class="card-text" data-toggle="tooltip" data-placement="top" title="Nuevos modelos!">Galeria</p>
+                 <button class="btn btn-outline-sucess" data-toggle="modal" data-target="#contacto">Contacto</button>
+            </div>
+            <div>
+                <button class="btn btn-primary btn-reserva">Ver <span class="oi oi-image"></span></button>
+            </div>
+        </div>
+
+        <div class=" card box-galery d-flex flex-column justify-content-between ml-2">
+            <div class="card-body">
+                <h5>Niños</h5>
+                <h6 class="card-subtitle text-muted"><span class="oi oi-person"></span></h6>
+                <img class="card-img-top" src="images/niños.jpg" alt="brote img">
+                <p class="card-text">Galeria</p>
+                 <button class="btn btn-outline-sucess" data-toggle="modal" data-target="#contacto">Contacto</button>
+            </div>
+            <div>
+                <button class="btn btn-dark btn-reserva">Ver <span class="oi oi-image"></span></button>
+            </div>
+        </div>
+
+       
+        <div class="card box-galery d-flex flex-column justify-content-between ml-2">
+            <div class="card-body">
+                <h5>Otros</h5>
+                <h6 class="card-subtitle text-muted">varios</h6>
+                <img class="card-img-top" src="images/otros.jpg" alt="brote img">
+                <p class="card-text" data-toggle="popover" data-title="promociones" data-content="No te pierdas los descuentos">Galeria</p>
+                  <button class="btn btn-outline-sucess" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
+            </div>
+            <div>
+                <button class="btn btn-danger btn-reserva" data-toggle="popover" data-title="promociones" data-content="No te pierdas los descuentos">Ver <span class="oi oi-image" ></span></button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--MODAL-->
+
+
+
+
+    <div class="modal fade" id="contacto" tabinex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ecampleModalLabel">Contactar Vendedor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Tu email:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Mensaje:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-succes">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<!--FOOTER-->
+
+
+
+
+<footer>
+   <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+            
+            <a href="http://facebook.com">Facebook</a>
+            <a href="http://twitter.com">Twitter</a> 
+            <a href="http://instagram.com">Instagram</a> 
+            <a href="http://google.com">Google+</a>    
+        </div>
+    
+        <div class="col-sm-4">
+            <adress>            
+            <h4>Oficina Central</h4>    
+            <p><span class="oi oi-home footer-address-icon"></span>Viamonte 568, CABA, Argentina</p>
+            <p><span class="oi oi-phone footer-adress-icon"></span>+54 9 11 3123 4567</p>
+            <p><span class="oi oi-envelope-closed footer-address-icon"></span>info@brote.com</p>
+            </adress>
+        </div>
+        
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+            <a href="http://facebook.com">Nosotros</a>
+            <a href="http://twitter.com">Envios</a> 
+            <a href="http://instagram.com">Terminos y Condiciones</a> 
+            <a href="http://google.com">Contacto</a> 
+        </div>
+   
+    </div>  
+</footer>
+
+
+
+
+
+<!--OptionalJavaScrip-->
+<!--jQuery first, then Poper.js, then Bootstrap JS / en ejercicio la ruta poper no muestra /umd/ -->
+
+<!--build: js dist/index.js-->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
+<!--tooltips-popor-carousel en index.js-->
+<script src="js/index.js"></script>
+
+<!--Jquerys sobre boton contacto "otros" id="contactoBtn"-->
+
+
+
+<script>
+     $(function(){
+        $('#contacto').on('show.bs.modal', function (e){ 
+            console.log('el modal se esta mostrando');
+
+            $('#contactoBtn').removeClass('btn-outline-sucess');
+            $('#contactoBtn').addClass('btn-primary');
+            $('#contactoBtn').prop('disabled', true);
+
+        });
+        $('#contacto').on('shown.bs.modal', function (e){ 
+            console.log('el modal se mostro');
+        });
+        $('#contacto').on('hide.bs.modal', function (e){ 
+            console.log('el modal se oculta');
+        });
+        $('#contacto').on('hidden.bs.modal', function (e){ 
+            console.log('el modal se oculto');
+
+            $('#contactoBtn').prop('disabled', false);
+
+        });
+    });
+</script>
+   
+<!--endbuild-->
+
+</body>
+
+
+</html>
+
+
+
+<!--ALTERNATIVA A 1ERA SECCION
+
+
+    <div class="d-flex flex-wrap">
+
+        <div class="col-sm-4">
+            <p>
+                <h3>Materiales</h3>
+                <p>Averigua mas sobre los materiales que utilizamos</p>
+            </p>
+        </div>
+
+        <div class="col-sm-4">
+            <p>
+                <h3>¿Donde Puedo Comprar?</h3>
+                <p>Enterate de las diferentes formas de comprar y metodos de envio</p>
+            </p>
+        </div>
+
+        <div class="col-sm-4">
+            <p>
+                <h3>¿Como Pago?</h3>
+                <p>Diferentes formas de pago</p>
+            </p>
+        </div>  
+
+    </div> -->

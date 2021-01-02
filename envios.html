@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brote Web</title>
+
+    <!--CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+
+</head>
+
+
+
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">BROTE</a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></s></li>
+            <li class="nav-item"><a class="nav-link" href="./envios.html">Nosotros</a></s></li>
+            <li class="nav-item active"><a class="nav-link" href="#">Envios</a></s></li>
+            <li class="nav-item"><a class="nav-link" href="#">Terminos y Condiciones</a></s></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></s></li>
+
+        </ul>
+    </div>
+
+</nav>
+
+
+
+
+
+<div class="jumbotron">
+    <h3>Brote Zapas</h3>
+</div>
+
+<div class="container">
+
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Envios</li>
+        </ol>
+    </nav>
+
+<!--botones en pestaña cambiar el nav-tab por nav-pills y tambien los tab de los data-toggle "pill"-->
+        <ul class="nav nav-pills" id="mytab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="envios-tab" data-toggle="pill" href="#envios" role="tab" aria-controls="envios" aria-selected="false">Envios</a>                
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pago-tab" data-toggle="pill" href="#pago" role="tab" aria-controls="pago" aria-selected="false">Formas de Pago</a>                
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comentarios-tab" data-toggle="pill" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>                
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="envios" role="tabpanel" aria-labelledby="envios-tab">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th>Tipo de Envio</th>
+                            <th>Capital Federal</th>
+                            <th>Buenos Aires</th>
+                            <th>Cordoba</th>
+                            <th>Santa Fe</th>
+                            <th>Neuquen</th>
+                            <th>Mendoza</th>
+                            <th>Salta</th>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Envio Simple</td>
+                                <td>$100</td>
+                                <td>$200</td>
+                                <td>$300</td>
+                                <td>$400</td>
+                                <td>$500</td>
+                                <td>$600</td>
+                                <td>$700</td>
+                            </tr>
+                             <tr>
+                                <td>Envio Rapido</td>
+                                <td>$200</td>
+                                <td>$300</td>
+                                <td>$400</td>
+                                <td>$500</td>
+                                <td>$600</td>
+                                <td>$700</td>
+                                <td>$900</td>
+                            </tr>
+                             <tr>
+                                <td>Envio Super Rapido</td>
+                                <td>$400</td>
+                                <td>$500</td>
+                                <td>$600</td>
+                                <td>$700</td>
+                                <td>$800</td>
+                                <td>$900</td>
+                                <td>$1.000</td>
+                            </tr>
+                            <tr>
+                                <td>Encomienda > 2CBM</td>
+                                <td>$600</td>
+                                <td>$700</td>
+                                <td>$800</td>
+                                <td>$900</td>
+                                <td>$1.000</td>
+                                <td>$1.100</td>
+                                <td>$1.200</td>
+                            </tr>
+                            <tr>
+                                <td>Encomienda > 5CBM</td>
+                                <td>$800</td>
+                                <td>$900</td>
+                                <td>$1.000</td>
+                                <td>$1.100</td>
+                                <td>$1.200</td>
+                                <td>$1.300</td>
+                                <td>$1.400</td>
+                            </tr>
+                            <tr>
+                                <td>Encomienda > 10CBM</td>
+                                <td>$1.000</td>
+                                <td>$1.100</td>
+                                <td>$1.200</td>
+                                <td>$1.300</td>
+                                <td>$1.400</td>
+                                <td>$1.500</td>
+                                <td>$1.600</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>       
+        
+
+        <div class="tab-pane fade" id="pago" role="tabpanel" aria-labelledby="pago-tab">
+
+            <div class="accordion" id="accordionPago">
+
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTarjetas" aria-expanded="true" aria-controls="collapseTarjetas">
+                                Tarjetas Aceptadas
+                            </button>
+                        </h5>
+                    </div>
+                    
+                    <div id="collapseTarjetas" class="collapse" aria-labelledby="headingOne" data-parent="#accordionPago">
+                        <div class="card-body">
+                            Visa / American Express / Mastercard
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo" >
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseMpago" aria-expanded="false" aria-controls="collapseMpago">
+                                Mercado Pago
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseMpago" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionPago">
+                        <div class="card-body">
+                            Podes pagar a traves de Mercado Pago.
+                            Se aceptan hasta 12 cuotas sin Interes.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseDescuento" aria-expanded="false" aria-controls="collapseDescuento">
+                                Descuentos
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseDescuento" class="collapse" aria-labelledby="headingThree" data-parent="#accordionPago">
+                        <div class="card-body">
+                            Metodologias de los Cupones de Descuento
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseDevoluciones" aria-expanded="false" aria-controls="collapseDevoluciones">
+                                Devoluciones
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseDevoluciones" class="collapse" aria-labelledby="headingFour" data-parent="#accordionPago">
+                        <div class="card-body">
+                            Metodologias por Devoluciones
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+
+        <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
+
+    </div>
+
+
+
+<!--FOOTER-->
+
+<footer>
+   <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+            <a href="http://facebook.com">Facebook</a>
+            <a href="http://twitter.com">Twitter</a> 
+            <a href="http://instagram.com">Instagram</a> 
+            <a href="http://google.com">Google+</a>    
+        </div>
+    
+        <div class="col-sm-4">
+            <adress>
+            <h3>Oficina Central</h3>    
+            <p>Viamonte 568, CABA, Argentina</p>
+            <p>+54 9 11 3123 4567</p>
+            <p>info@brote.com</p>
+            </adress>
+        </div>
+        
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+            <a href="http://facebook.com">Nosotros</a>
+            <a href="http://twitter.com">Envios</a> 
+            <a href="http://instagram.com">Terminos y Condiciones</a> 
+            <a href="http://google.com">Contacto</a> 
+        </div>
+   
+    </div>  
+</footer>
+
+
+
+
+
+<!--OptionalJavaScrip-->
+<!--jQuery first, then Poper.js, then Bootstrap JS-->
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist//umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>
+
+
+        <!--1ERA TABLA REALIZADA
+            
+            
+            <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <th>Tipo de Envio</th>
+                    <th>Capital Federal</th>
+                    <th>Buenos Aires</th>
+                    <th>Cordoba</th>
+                    <th>Neuquen</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <span class="oi oi-briefcase"></span> Envio Simple </td>
+                        <td>$100</td>
+                        <td>$200</td>
+                        <td>$300</td>
+                        <td>$400</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="oi oi-briefcase"></span> Envio Rapido</td>
+                        <td>$200</td>
+                        <td>$300</td>
+                        <td>$400</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td> <span class="oi oi-briefcase"></span> Envio Super Rapido</td>
+                        <td>$300</td>
+                        <td>$400</td>
+                        <td>$500</td>
+                        <td>$600</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header" style="background-color: blue; color: white;">
+                    Medios de Pago Aceptados
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" style="background-color: blue; color: white;">Tarjetas aceptadas</li>
+                    <li class="list-group-item" style="background-color: blue; color: white;">Mercado Pago</li>
+                    <li class="list-group-item" style="background-color: blue; color: white;">Descuentos</li>
+                    <li class="list-group-item" style="background-color: blue; color: white;">Devoluciones</li>
+
+                </ul>
+
+            </div>
+
+        </div> -->
+
+
+
+
+
+
+
+
+        
+
+            <!-- <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header" style="background-color: blue; color: white;">
+                    Formas de Pago
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Tarjetas Aceptadas</li>
+                        <li class="list-group-item">Mercado Pago</li>
+                        <li class="list-group-item">Descuentos</li>
+                        <li class="list-group-item">Devoluciones</li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
