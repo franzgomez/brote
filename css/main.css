@@ -1,0 +1,38 @@
+.jumbotron {
+    background-color: brown;
+    color: black;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 10px 10px 0 10px;
+    background-color: brown;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+/*.btn {
+    background-color: #be2026;
+    color: black;
+}
+*/
+
+.box-galery {
+    flex: 1 200px;
+    /*padding: 2px 0px 2px 0px;*/
+    text-align:center;
+    margin-top: 10px;
+}
+
+.btn-reserva {
+    width: 100%;
+    border-radius: 0px;
+}
+
+.footer-address-icon    {
+    padding-right: 10px;
+}
+
+.tab-content    {
+    padding-top: 10px;
+}
